@@ -1,26 +1,132 @@
 <!DOCTYPE html>
+<html lang="en">
 
-<html>
+<head>
+    <title>Stefano Scali</title>
+    <link rel="icon" href="./fig/favicon.png">
+    <meta charset="utf-8">
+    <meta name="description" content="Is there any physics question you would like to find an answer to? In this website, you will not find any of these answers rather what I do and what I have done.">
+    <meta name="keywords" content="Stefano Scali, physics, appunti, fisica, università di siena, university of cambridge, university of exeter">
+    <meta name="author" content="Stefano Scali">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/mystyle.css">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+</head>
 
-	<head>
-	 	<link rel="stylesheet" href="custom.css">
-	</head>
+<body>
 
-	<body>
-		<h3>Hey there, here some info on mekise's house</h3>
-		<p>TTS cost:
-			<ul>
-				<li>1pound Tip</li>
-				<li>50bits Cheer</li>
-				<li>50 channel points</li>
-			</ul>
-		</p>
-		<p>
-			8ball costs 20 channel points
-		</p>
-		<p>
-			kappagen costs 40 channel points
-		</p>
-	</body>
+    <div id="sidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="./welcome.html">welcome.</a>
+        <hr />
+        <a href="./ppf.html">ppf.</a>
+        <hr />
+        <!-- <a href="./science.html">science.</a>
+        <hr /> -->
+        <a href="./notes.html">notes.</a>
+        <hr />
+        <a href="./teaching.html">teaching.</a>
+    </div>
+
+    <div id="main" class="container" style="margin-top:30px; margin-bottom:30px">
+        <div class="row">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-1 align-self-center">
+                <h4 class="pointer" onclick="openNav()">&#9776;</h4>
+            </div>
+            <div class="col-sm-8 text-center align-self-center">
+                <h2 style="font-family: 'Playfair Display', serif">stefano scali.</h2>
+            </div>
+            <div class="col-sm-2"></div>
+        </div>
+        <hr />
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-3">
+                <img src="fig/stefano_scali.jpg" class="img-fluid rounded-circle align-self-center" style="padding: 20px" alt="Stefano Scali">
+            </div>
+            <div class="col-md-7 text-left align-self-center">
+                <h2 style="color: darkred">dear reader,</h2>
+                <p>perhaps you will not only have some appreciation of this culture; it is even possible that you may want to join in the greatest adventure the human kind has never begun - Feynman, "Lectures on physics"</p>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+        <hr />
+        <div class="row" style="margin-top: 30px">
+
+            <div class="col-sm-1"></div>
+
+            <div class="col-sm-10">
+                <h3 style="color: darkred">quick menu.</h3>
+                <p>
+                    <a href="./welcome.html">welcome.</a>
+                    <a href="./ppf.html">ppf.</a>
+                    <!-- <a href="./science.html">science.</a> -->
+                    <a href="./notes.html">notes.</a>
+                    <a href="./teaching.html">teaching.</a>
+                </p>
+                <br />
+                <h3 style="color: darkred">contacts.</h3>
+                <p>You can drop me an email <a href="mailto:s.scali@exeter.ac.uk">here</a>, if you wish. Also, this is <a href="https://www.linkedin.com/in/stefano-scali/" target="_blank">my linkedin</a> and <a href="https://twitter.com/phystefano" target="_blank">my twitter</a>.</p>
+                <br />
+                <h3 style="color: darkred">github.</h3>
+                <p>In <a href="https://github.com/mekise" target="_blank">my github</a>, you find the code and packages I developed for the projects I worked on. In addition, there are some tangential repos for linux users, gamers and arxiv readers.</p>
+                <br />
+                <h3 style="color: darkred">speedthearxiv.</h3>
+                <h6>posted 2023.04.14</h6>
+                <p>It is common practice to read the Arxiv periodically, checking the same sections, the same keywords, and the same authors. For this reason, I have written <a href="https://github.com/mekise/speed-the-arxiv" target="_blank">this Python script</a>. Together with a little HTML, it checks the latest on the Arxiv based on sections, keywords and authors of choice. It uses Flask to query the Arxiv API and it shows the results in a no-fuss HTML page. It includes collapsible abstracts and links to the articles.</p>
+                <br />
+                <h3 style="color: darkred">new position.</h3>
+                <h6>posted 2023.01.07</h6>
+                <p>I am glad to say I have joined the group of Oleksandr Kyriienko (<a href="https://kyriienko.github.io/index.html" target="_blank">QuDOS</a>) as postdoctoral research fellow. I will dive into quantum topological data analysis, a graph-theory approach to data that we hope to advance with quantum subroutines and quantum machine learning.</p>
+                <br />
+                <h3 style="color: darkred">news tutorials.</h3>
+                <h6>posted 2021.09.30</h6>
+                <p>If you are here for tutorials of any kind, this is what you are looking for -> <a href="./teaching.html">teaching</a>.</p>
+                <br />
+                <h3 style="color: darkred">welcome.</h3>
+                <h6>posted 2019.10.27</h6>
+                <p>Hi, welcome to my little space. I am Stefano Scali, a former carpenter, tech merchandiser, motocross rider, cyclist, gamer and many others. For the past years, a wannabe physicist. I did my <a href="https://en.unisi.it/" target="_blank">Bachelor's</a> in physics in <a href="https://en.wikipedia.org/wiki/Siena" target="_blank">Siena</a>, an amazing medieval town in the south of Tuscany, I migrated to Cambridge for my <a href="https://www.cam.ac.uk/" target="_blank">Master's</a> in physics and I finally moved to Exeter for my <a href="https://www.exeter.ac.uk/" target="_blank">PhD</a> in quantum thermodynamics. Here, I joined the <a href="http://www.quantum-exeter.co.uk/" target="_blank">Quantum Non-Equilibrium Group</a> supervised by Prof Janet Anders.</p>
+                <br />
+                <h3 style="color: darkred">disclaimer.</h3>
+                <h6>posted 2019.10.27</h6>
+                <p>This is a project emerged from the desire of creating something personal and new or maybe only personal. I hope I will dedicate part of my spare time to write about physics, related and less so but this will require a little patience. So, relax and enjoy, <a href="https://www.merriam-webster.com/dictionary/dolce%20far%20niente" target="_blank"><i>il dolce far niente</i></a> is the philosophy behind this page.</p>
+            </div>
+
+            <div class="col-sm-1"></div>
+
+        </div>
+
+        <hr />
+
+        <div class="row text-center" style="margin-top: 30px">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-10">
+                <p><small>If you are interested in neat CSS layouts, take a look at <a href="https://getbootstrap.com/" target="_blank">Bootstrap</a>. The sidenav is not included though ;&#x29;<br />Also, <a href="https://www.mathjax.org/" target="_blank">Mathjax</a> is the answer to your question about Latex rendering.</small></p>
+                <p>&#169; Stefano Scali, 2020</p>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+        function openNav() {
+            document.getElementById("sidenav").style.width = "200px";
+        }
+
+        function closeNav() {
+            document.getElementById("sidenav").style.width = "0";
+        }
+
+    </script>
+
+</body>
 
 </html>

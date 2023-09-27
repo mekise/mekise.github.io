@@ -1,0 +1,89 @@
+/* default font */
+* {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* links text colour */
+a:link {
+    color: rgba(20, 100, 180, 1);
+}
+
+a:hover {
+    color: rgba(20, 100, 180, 0.7);
+}
+
+a:visited {
+    color: rgba(140, 85, 85, 1);
+}
+
+.black {
+    color: black;
+}
+
+.tags {
+    color: gray;
+}
+
+.pointer {
+    display: inline-block;
+    cursor: pointer;
+}
+
+ul {
+    /* Remove default bullets */
+    list-style: none;
+}
+
+ul li::before {
+    /* bullet */
+    content: "\2022";
+    /*    font-weight: bold;*/
+    color: black;
+    /* add space between bullet and text */
+    display: inline-block;
+    /* adjust indents */
+    width: 0.9em;
+    margin-left: -1em;
+}
+
+/* side navigation menu */
+.sidenav {
+    height: 100%;
+    /* 0 width - change this with JavaScript */
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: darkred;
+    /* disable horizontal scroll */
+    overflow-x: hidden;
+    /* place content ---px from the top */
+    padding-top: 60px;
+    /* second transition effect to slide in the sidenav */
+    transition: 0.4s;
+}
+
+/* navigation menu links */
+.sidenav a {
+    padding: 8px 10px 8px 20px;
+    text-decoration: none;
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.9);
+    display: block;
+    transition: 0.4s;
+}
+
+/* mouse over the navigation links */
+.sidenav a:hover {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/* close button: position (top right corner of sidenav) and style */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    font-size: 30px;
+    margin-left: 50px;
+}
